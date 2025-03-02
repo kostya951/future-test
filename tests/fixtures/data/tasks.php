@@ -1,0 +1,43 @@
+<?php
+return [
+    0 => [
+        'id' => 1,
+        'name' => 'Test task 1',
+        'description' => 'This is a test task 1',
+        'due_date' => '2025.03.06 15:00:00',
+        'create_date' => '2025.02.28 15:00:00',
+        'status' => null,
+        'priority' => null,
+        'category' => null,
+    ],
+    1 => [
+        'id' => 2,
+        'name' => 'Test task 2',
+        'description' => 'This is a test task 2',
+        'due_date' => '2025.03.04 15:00:00',
+        'create_date' => '2025.03.01 15:00:00',
+        'status' => 'не выполнен',
+        'priority' => null,
+        'category' => null,
+    ],
+    2 => [
+        'id' => 3,
+        'name' => 'Test task 3',
+        'description' => 'This is a test task 3',
+        'due_date' => '2025.03.03 15:00:00',
+        'create_date' => '2025.03.02 15:00:00',
+        'status' => 'выполнен',
+        'priority' => 'низкий',
+        'category' => null,
+    ],
+    3 => [
+        'id' => 4,
+        'name' => 'Поиск по ключу',
+        'description' => 'This is a test task 3',
+        'due_date' => '2025.03.02 15:00:00',
+        'create_date' => '2025.03.02 15:00:00',
+        'status' => 'выполнен',
+        'priority' => 'низкий',
+        'category' => null,
+    ],
+];

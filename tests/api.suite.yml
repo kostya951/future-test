@@ -1,0 +1,27 @@
+# Codeception Test Suite Configuration
+
+# suite for unit (internal) tests.
+# RUN `build` COMMAND AFTER ADDING/REMOVING MODULES.
+actor: ApiTester
+step_decorators:
+  - \Codeception\Step\AsJson
+modules:
+    enabled:
+      - Asserts
+      - Yii2:
+            part: [orm, email, fixtures]
+      - REST:
+          depends: PhpBrowser
+          url: 'http://future.test/api'
+      - Db:
+          dsn: 'mysql:host=localhost;dbname=future;port=3306'
+          user: 'root'
+          password: '951753'
+          populate: true
+          cleanup: true
+          reconnect: true
+    config:
+      PhpBrowser:
+        url: 'http://future.test'
+        headers:
+          Content-Type: application/json
