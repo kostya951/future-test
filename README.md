@@ -6,13 +6,12 @@ of `TaskController` class in controllers directory.
 Routing configured in `config/web.php` in `urlManager` section.
 
 Instruction to deploy:
-run `composer install` - install dependencies of project (if you don't have composer go here https://getcomposer.org/doc/00-intro.md)
-run `docker-compose build` -build image from Dockerfile
-run `docker-compose up` - run docker services
-run `docker-compose exec webserver bash` - go into container with php and webserver
-In container run `php yii migrate --interactive=0` - apply migrations
-In container run `php vendor/bin/codecept run` - perform tests presented 
-in `tests/api/TasksCest.php`
+- run `composer install` - install dependencies of project (if you don't have composer [go here](https://getcomposer.org/doc/00-intro.md)
+- run `docker-compose build` -build image from Dockerfile
+- run `docker-compose up` - run docker services
+- run `docker-compose exec webserver bash` - go into container with php and webserver
+- In container run `php yii migrate --interactive=0` - apply migrations
+- In container run `php vendor/bin/codecept run` - perform tests presented in `tests/api/TasksCest.php`
 
 Api must be available on `http://localhost:8000`
 
