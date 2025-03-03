@@ -2,8 +2,8 @@
 
 return [
     'class' => 'yii\db\Connection',
-    'dsn' => 'mysql:host=localhost;dbname=future;port=3306',
-    'username' => 'root',
+    'dsn' => 'mysql:host=host.docker.internal;dbname=future;port=6000',
+    'username' => 'admin',
     'password' => '951753',
     'charset' => 'utf8',
 

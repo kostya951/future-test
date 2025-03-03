@@ -12,16 +12,16 @@ modules:
             part: [orm, email, fixtures]
       - REST:
           depends: PhpBrowser
-          url: 'http://future.test/api'
+          url: 'http://localhost/api'
       - Db:
-          dsn: 'mysql:host=localhost;dbname=future;port=3306'
-          user: 'root'
+          dsn: 'mysql:host=host.docker.internal;dbname=future;port=6000'
+          user: 'admin'
           password: '951753'
           populate: true
           cleanup: true
           reconnect: true
     config:
       PhpBrowser:
-        url: 'http://future.test'
+        url: 'http://localhost'
         headers:
           Content-Type: application/json
